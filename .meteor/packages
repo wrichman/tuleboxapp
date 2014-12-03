@@ -63,7 +63,6 @@ telescope-rss
 telescope-search
 telescope-tags
 telescope-theme-hubble
-telescope-email
 telescope-module-embedly
 telescope-newsletter
 telescope-daily
@@ -75,4 +74,5 @@ telescope-notifications
 # Accounts Templates
 useraccounts:unstyled
 telescope-static-pages
+telescope-email
 

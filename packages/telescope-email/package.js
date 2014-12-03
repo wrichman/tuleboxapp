@@ -36,6 +36,7 @@ Package.onUse(function (api) {
     'lib/server/templates/emailNewPost.handlebars',
     'lib/server/templates/emailNewReply.handlebars',
     'lib/server/templates/emailNewUser.handlebars',
+    'lib/server/templates/emailNewRequest.handlebars',
     'lib/server/templates/emailTest.handlebars',
     'lib/server/templates/emailWrapper.handlebars',
   ], ['server']);

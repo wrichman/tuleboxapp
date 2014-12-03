@@ -91,5 +91,13 @@ Meteor.methods({
     if(isAdminById(this.userId)){
       var email = buildAndSendEmail (getSetting('defaultEmail'), 'Telescope email test', 'emailTest', {date: new Date()});
     }
+  },
+  buildAndSendEmail: function (to, subject, template, properties) {
+    var html = buildEmailTemplate(getEmailTemplate(template)(properties));
+    return sendEmail (to, subject, html);
   }
 })
+
+Meteor.startup(function () {
+ process.env.MAIL_URL = 'smtp://postmaster@sandbox8497de61a36a48ba9489d135299ab385.mailgun.org:42f1a9aaaae27c4240054ae6702a4163@smtp.mailgun.org:587';
+});
