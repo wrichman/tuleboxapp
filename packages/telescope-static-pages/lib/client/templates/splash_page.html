@@ -1,0 +1,460 @@
+<template name="splashPage">
+  <style type="text/css">
+    .photo-wrapper .overlay span { font-weight: 100}
+    .photo-wrapper .overlay.behind { display: none; }
+    .photo-wrapper:hover .overlay.showing { display: none; }
+    .photo-wrapper:hover .overlay.behind { 
+        margin-top: 10px; 
+        display:inline-block;
+        line-height:40px;
+        vertical-align:middle;
+
+    }
+     .breadcrumb-nav {
+        background-color: rgb(247, 249, 250);
+        border-color: rgb(233, 236, 239);
+    }
+    .breadcrumb-text p {
+        font-size: 23.996px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .breadcrumb-text p a:after {
+        color: rgb(189, 195, 199);
+        content: "/";
+        font-weight: 200;
+        margin: 0 4px 0 9px;
+    }
+
+    .contacts-1 h3 {
+        margin: 0 0 30px;
+    }
+    .header-6-sub .signup-form form button {
+        width: 47.5%;
+    }
+
+    .crew-2 .container {
+        padding-right: 0px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .crew-2 .members .member-wrapper:first-child + .member-wrapper + .member-wrapper {
+        text-align: center;
+    }
+
+    .crew-2 .members .social-btns > * > *:first-child {
+        color: rgb(255, 255, 255);
+    }
+
+    .header-6-sub .background {
+        background-image: url("https://unsplash.imgix.net/reserve/PPE2xapKRNyy2DlTt89F_Gutman_island.jpg?q=75&fm=jpg&s=d65d0e7f397d2a59c93dbd0aa4b29603");
+        opacity:1;
+    }
+
+    .header-6-sub h3 {
+        margin-bottom: 10px;  
+    }
+    .header{
+        margin-bottom: 0px;
+    }
+
+    .footer-14 {
+        padding-top: 15px;
+    }
+    .footer-14 .container {
+        padding: 10px 0;
+    }
+
+    .crew-2 .members .photo-wrapper{
+        background-color: rgb(147, 183, 207);
+    }
+    
+
+    .footer-14 {
+        border: 2px solid lightgrey;
+    }
+
+    .content-5 {
+        padding-top: 100px;
+        padding-bottom: 120px;
+        border-bottom: 2px solid lightgrey;
+    }
+
+    .content-15 h3 {
+        margin-bottom: 10px;
+    }
+
+    .content-15 {
+        padding-top: 60px;
+        padding-bottom: 0px;
+        position: relative;
+    }
+
+    .content-31 .box .img {
+        width: 90%;
+    }
+
+    .footer-6 h6, .footer-6 .brand{
+        color: white;
+    }
+
+    .content-31 {
+        padding-top: 60px;
+    }
+    .footer-14 .signup-form form button {
+        width: 42%;
+        margin-left: 3%;
+        font-size: 24px;
+        line-height: 36px
+    }
+
+    /* Also modified jQuery height */
+    .content-31 .container .pt-controls {
+        bottom: 170px;
+    }
+    .footer-14 .is_or {
+        display: inline-block;
+        margin-left: 14px;
+    }
+
+    .footer-14 nav ul li:first-child {
+        margin-left: 30px;
+    }
+    .content-wrapper{
+        max-width: 100%;
+        padding:0;
+    }
+
+  </style>
+
+
+
+
+  <section class="header-6-sub" style="padding-top:30px;padding-bottom:40px">
+    <div class="background">&nbsp;</div>
+    <div class="container">
+        
+        
+            <!-- <h3><b>Solve Problems Quickly</b></h3> -->
+            <h3><b>Hire the Worlds Brightest Minds Remotely</b></h3>
+            <div class="row">
+                <p class="lead col-sm-12">
+                    <b>Tulebox is a remote community that connects top talent with top startups.</b>
+                </p>
+            </div>
+        
+        
+
+        <section class="crew-2" style="padding-top: 20px; padding-bottom: 20px">
+        <div class="members">
+            <div class="member-wrapper">
+                <div class="member">
+                    <div class="photo-wrapper">
+                        <div class="photo"><img src="http://highlinewest.com/wp-content/uploads/2012/08/corporate-headshot-photographer-vancouver-2.jpg" alt="" style="display: none;"></div>
+                        <div class="name">Vladimir K.</div>
+                        <div class="position">UI Designer</div>
+                    </div>
+                    <div class="info">
+                        <div class="social-btns">
+                            <a href="#">
+                                <div class="fui-vimeo"></div>
+                                <div class="fui-vimeo"></div>
+                            </a>
+                            <a href="#">
+                                <div class="fui-facebook"></div>
+                                <div class="fui-facebook"></div>
+                            </a>
+                            <a href="#">
+                                <div class="fui-twitter"></div>
+                                <div class="fui-twitter"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="member-wrapper">
+                <div class="member">
+                    <div class="photo-wrapper">
+                        <div class="photo" style="background-image: url(http://highlinewest.com/wp-content/uploads/2012/08/lien-yeung-cbc-headshot-photographer.jpg);"><img src="http://highlinewest.com/wp-content/uploads/2012/08/lien-yeung-cbc-headshot-photographer.jpg" alt="" style="display: none;"></div>
+                        <div class="name">Sergey S.</div>
+                        <div class="position">UI Designer</div>
+                    </div>
+                    <div class="info">
+                        <div class="social-btns">
+                            <a href="#">
+                                <div class="fui-vimeo"></div>
+                                <div class="fui-vimeo"></div>
+                            </a>
+                            <a href="#">
+                                <div class="fui-facebook"></div>
+                                <div class="fui-facebook"></div>
+                            </a>
+                            <a href="#">
+                                <div class="fui-twitter"></div>
+                                <div class="fui-twitter"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="member-wrapper">
+                <div class="member">
+                    <div class="photo-wrapper">
+                        <div class="photo" style="background-image: url(http://www.mariepapp.com/data/photos/400_1Will_Headshot_3.jpg);"><img src="http://www.mariepapp.com/data/photos/400_1Will_Headshot_3.jpg" alt="" style="display: none;"></div>
+                        <div class="name">Adrian V.</div>
+                        <div class="position">Founder</div>
+                    </div>
+                    <div class="info">
+                        <!-- <img style="height:60px;width:60px" src="http://logodesigninspire.com/wp-content/uploads/2014/07/white-apple-logo-transparent-background.png"> -->
+                        <div class="social-btns">
+                            <a href="#">
+                                <div class="fui-vimeo"></div>
+                                <div class="fui-vimeo"></div>
+                            </a>
+                            <a href="#">
+                                <div class="fui-facebook"></div>
+                                <div class="fui-facebook"></div>
+                            </a>
+                            <a href="#">
+                                <div class="fui-twitter"></div>
+                                <div class="fui-twitter"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </section>
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="signup-form">
+                    <form>
+                        <div class="clearfix">
+                            <button type="submit" class="btn btn-primary btn-embossed">Contract Talent</button>
+                            <button type="submit" class="btn btn-primary btn-embossed">Request To Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="footer-14" style="background-color: white;">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>Where our talent is from</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <img style="height:50px;width:150px" src="http://www.toptal.com/assets/public/blocks/clients/home_showcase/airbnb-0bde9d8f44e69b39af7e5225f66f29f8.png">
+                <img style="height:50px;width:150px" src="http://www.toptal.com/assets/public/blocks/clients/home_showcase/ideo-cec4ade4a44f7caa260e7b9f4db613e6.png">
+                <img style="height:50px;width:150px" src="http://www.toptal.com/assets/public/blocks/clients/home_showcase/axelspringer-f7008ffd7c7d80eaa919bcdd6895d88a.png">
+                <img style="height:50px;width:150px" src="http://www.toptal.com/assets/public/blocks/clients/home_showcase/kddi-b505de31cbb774fd40ec981aa6e4604c.png">
+                <img style="height:50px;width:150px" src="http://www.toptal.com/assets/public/blocks/clients/home_showcase/zendesk-e9a13f64e823174dec77a6a72a5772a1.png">
+            </ul>
+        </nav>
+    </div>
+  </footer>
+
+    <section class="content-3">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 aligment">
+                    <h3>Remote Talent on Demand</h3>
+                    <p>
+                        Find the right talent quickly. Solve mission critical issues within a day.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="img">
+                        <img src="/img/tulebox_departments.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delimiter">&nbsp;</div>
+        <div class="container">
+            <div class="row features">
+                <div class="col-sm-3">
+                    <h6>1) Select the job to be done</h6>
+                    <p>We did a 2.5K size high resolution photo that will suit even for a very large web site.</p>
+                </div>
+                <div class="col-sm-3">
+                    <h6>2) We'll find you the perfect match</h6>
+                    <p>To get started, you select the desired sample and base the entire website on it. It’s that
+                        simple!</p>
+                </div>
+                <div class="col-sm-3">
+                    <h6>3) Work with them 100% risk-free</h6>
+                    <p>Samples will show you the feeling on how to play around using the components.</p>
+                </div>
+                <div class="col-sm-3">
+                    <h6>4) They become part of your team</h6>
+                    <p>Samples will show you the feeling on how to play around using the components.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="content-5">
+  <div class="container">
+    <img src="http://designmodo.github.io/Flat-UI/img/icons/svg/retina.svg" width="200" height="200" alt="">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h3>Save Time, Money & Your Sanity</h3>
+            <p class="lead">
+                Hiring the wrong people can cost thousands in implicit and explicit costs.
+            </p>
+        </div>
+    </div>
+    <div class="row features">
+        <div class="col-sm-4 col-sm-offset-2">
+            <span class="fui-cmd"> </span>
+            <h6>Domain Expertise</h6>
+            <p>You have to have to have the domain expertise to know what problem to solve and how to find that person.</p>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1">
+            <span class="fui-windows"> </span>
+            <h6>Time Commitment</h6>
+            <p>
+                Screening hundreds of candidates can take a considerable amount of time.
+            </p>
+        </div>
+    </div>
+    <div class="row features">
+        <div class="col-sm-4 col-sm-offset-2">
+            <span class="fui-upload"> </span>
+            <h6>Too Much Information</h6>
+            <p>
+                There are literally hundreds of products and services to help you make better decisions. We've used them all and will help you choose the one that's perfect for your startup.
+            </p>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1">
+            <span class="fui-credit-card"> </span>
+            <h6>Contract Risk</h6>
+            <p>Startups can make a number of costly legal errors in their contracts.(IP, Non-Compete, Non-Disclosure)</p>
+        </div>
+    </div>
+    <div class="row features">
+        <div class="col-sm-4 col-sm-offset-2">
+            <span class="fui-upload"> </span>
+            <h6>Idle Time</h6>
+            <p>
+                Companies pay an exorbident amount for under utilized talent.
+            </p>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1">
+            <span class="fui-credit-card"> </span>
+            <h6>Severance & Morale</h6>
+            <p>
+                Don't worry about paying us severance, and if decide to not work with us it won't hurt your company's morale.
+            </p>
+        </div>
+    </div>
+  </div>
+  </section>
+
+
+
+  
+
+
+
+  <footer class="footer-14" style="background-color: white;">
+  <div class="container">
+    <nav>
+        <ul>
+            <li>Join the Tulebox community</li>
+        </ul>
+    </nav>
+     <div class="row" style="padding-top:20px">
+        <div class="col-sm-6 col-sm-offset-3" style="text-align:center">
+            <div class="signup-form">
+                <form>
+                    <div class="clearfix">
+                        <button type="submit" class="btn btn-huge btn-primary btn-embossed">Contract Talent</button>
+                        <div class="is_or">
+                          OR  
+                        </div>
+                        <button type="submit" class="btn btn-huge btn-primary btn-primary btn-embossed">Request To Join</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  </footer>
+
+  <footer class="footer-6 bg-midnight-blue">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div><a class="brand" href="#">Startup Tulebox</a></div>
+        </div>
+        <nav>
+            <div class="col-sm-2">
+                <h6>About</h6>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h6>Connect</h6>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <!-- <li><a href="#">Resources</a></li> -->
+                    <!-- <li><a href="#">Community</a></li> -->
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h6>Stuff</h6>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-sm-3">
+            <h6>Subscribe</h6>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn" type="button">
+                        <span class="fui-arrow-right"> </span>
+                    </button>
+                </span>
+            </div>
+            <div class="social-btns">
+                <a href="#">
+                    <div class="fui-facebook"></div>
+                    <div class="fui-facebook"></div>
+                </a>
+                <a href="#">
+                    <div class="fui-twitter"></div>
+                    <div class="fui-twitter"></div>
+                </a>
+                <a href="#">
+                    <div class="fui-vimeo"></div>
+                    <div class="fui-vimeo"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+  </footer>
+
+  
+</template>

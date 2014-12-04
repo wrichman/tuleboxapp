@@ -1,5 +1,12 @@
 Meteor.startup(function () {
   Router.map(function() {
+    this.route('/', {
+      path: '/',
+      template: getTemplate('splashPage')
+    });
+  });
+
+  Router.map(function() {
     this.route('talent', {
       path: '/talent',
       template: getTemplate('talentPage')
@@ -26,8 +33,5 @@ var departments =[
 ]
 
 
-// left side
-primaryNav.push('talentLink');
-
-// right side
-// secondaryNav.push('talentLink');
+secondaryNav.push('talentLink');
+primaryNav.push('resourcesLink');

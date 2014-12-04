@@ -73,6 +73,6 @@ telescope-notifications
 
 # Accounts Templates
 useraccounts:unstyled
-telescope-static-pages
 telescope-email
+telescope-static-pages
 
