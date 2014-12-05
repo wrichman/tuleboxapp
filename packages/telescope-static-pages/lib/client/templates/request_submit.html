@@ -1,30 +1,126 @@
 <template name="requestSubmit">
-  <h1>{{this.service.name}}{{this.practice.name}}</h1>
-  <form class="main form">
-    <div class="form-group">
-      <label class="control-label" for="name">Name</label>
-      <div class="controls">
-          <input name="name" id="name" type="text" value="" placeholder="Albert Einstein" class="form-control"/>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label" for="phone">Phone</label>
-      <div class="controls">
-          <input name="phone" id="phone" type="text" value="" placeholder="Your phone number" class="form-control"/>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label" for="email">Email</label>
-      <div class="controls">
-          <input name="email" id="email" type="text" value="" placeholder="Your email" class="form-control"/>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label" for="problem">Problem</label>
-      <div class="controls">
-          <input name="problem" id="problem" type="text" value="" placeholder="Your problem" class="form-control"/>
-      </div>
-    </div>
-    <input type="submit" value="Submit" class="btn btn-primary"/>
-  </form>
+  <style type="text/css">
+            .photo-wrapper .overlay.behind { display: none; }
+            .photo-wrapper:hover .overlay.showing { display: none; }
+            .photo-wrapper:hover .overlay.behind { 
+                margin-top: 10px; 
+                display:inline-block;
+                line-height:40px;
+                vertical-align:middle;
+
+            }
+
+            .breadcrumb-nav {
+                background-color: rgb(247, 249, 250);
+                border-color: rgb(233, 236, 239);
+            }
+            .breadcrumb-text p {
+                font-size: 23.996px;
+                font-weight: 300;
+                margin-top: 10px;
+            }
+
+            .breadcrumb-text p a:after {
+                color: rgb(189, 195, 199);
+                content: "/";
+                font-weight: 300;
+                margin: 0 4px 0 9px;
+            }
+
+            .contacts-1 h3 {
+                margin: 0 0 30px;
+            }
+
+            .contacts-3 form {
+                margin: 10px 0 0;
+            }
+
+            .contacts-3 h3 {
+                margin: 10px;
+            }
+
+            .contacts-3 form input, .contacts-3 form textarea {
+                margin: 0 0 17px 0;
+            }
+
+            .contacts-3 .links {
+                margin: 15px 0 40px;
+                padding-bottom: 40px;
+                border-bottom: 2px solid rgb(235, 237, 238);
+            }
+
+            .content-wrapper{
+              max-width: 100%;
+              padding:0;
+            }
+
+        
+        </style>
+
+
+  <section class="contacts-3" style="padding-top: 0px">
+            <div class="container" width="100%">
+                <div class="row" style="border-bottom: 2px solid rgb(235, 237, 238)">
+                    <div class="col-sm-offset-2 col-sm-8" style="text-align: center">
+                        <h3>We'd love to solve your <b>{{this.service.name}} {{this.practice.name}}</b> problems.<br> Fill in the form and <i>we'll call you</i> in the next 15 min.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                       <!--  <form class="main form">
+                        <div class="form-group">
+                        <label class="control-label" for="name">Name</label>
+                        <div class="controls">
+                        <input name="name" id="name" type="text" value="" placeholder="Albert Einstein" class="form-control"/>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label class="control-label" for="phone">Phone</label>
+                        <div class="controls">
+                        <input name="phone" id="phone" type="text" value="" placeholder="Your phone number" class="form-control"/>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label class="control-label" for="email">Email</label>
+                        <div class="controls">
+                        <input name="email" id="email" type="text" value="" placeholder="Your email" class="form-control"/>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label class="control-label" for="problem">Problem</label>
+                        <div class="controls">
+                        <input name="problem" id="problem" type="text" value="" placeholder="Your problem" class="form-control"/>
+                        </div>
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-primary"/>
+                        </form>  -->                       
+                        <form>
+                            <label class="h6">Full Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Albert Einstein">
+                            <label class="h6">Phone Number</label>
+                            <input type="text" class="form-control" name="phone" placeholder="416-522-3010">
+                            <label class="h6">E-mail</label>
+                            <input type="text" class="form-control" name="email" placeholder="albert@gmail.com">
+                            <label class="h6">A Short Description of Your Problem</label>
+                            <textarea rows="4" class="form-control" name="problem" placeholder="I'm relatively close to solving my problem..."></textarea>
+                            <input type="submit" value="Submit" class="btn btn-primary"/>
+                        </form>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <h5>Get To Know Us</h5>
+                        <div class="links">
+                            <a href="#"><span class="fui-phone"></span> +1 416 522 3010</a><br>
+                            <a href="#"><span class="fui-mail"></span> mr.madbyte@gmail.com</a>
+                        </div>
+                        <h5>Come Meet Us</h5>
+                        <div class="map">
+                            <!--map-->
+                            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=40.714353,-74.005973&amp;spn=0.04554,0.072956&amp;z=12&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 </template>

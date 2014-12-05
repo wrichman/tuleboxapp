@@ -11,7 +11,6 @@ Template.requestSubmit.events({
     
     request._id = Requests.insert(request);
     var subject = "Welcome to Telescope, " + request.name;
-    debugger
     Meteor.call('buildAndSendEmail', request.email, subject, 'emailNewRequest', request)
     Router.go('talent', request);
   }
