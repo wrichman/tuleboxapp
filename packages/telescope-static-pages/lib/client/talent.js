@@ -9,21 +9,33 @@ Meteor.startup(function () {
   Router.map(function() {
     this.route('talent', {
       path: '/talent',
-      template: getTemplate('talentPage')
+      waitOn: function() {
+        return Meteor.subscribe('services')
+      },
+      template: getTemplate('servicesList')
     });
   });
 
   Router.map(function() {
-    this.route('talent/:id', {
-      path: '/talent/:id',
-      template: getTemplate('departmentPage')
+    this.route('practicesList', {
+      path: '/talent/:_id',
+      waitOn: function() {
+        return [Meteor.subscribe('services'), Meteor.subscribe('practices', this.params._id)]
+      },
+      data: function() { return Services.findOne({_id: this.params._id}); }
+      // template: getTemplate('practicesList')
     });
   });
 
   Router.map(function() {
-    this.route('talent/:id/request', {
-      path: '/talent/:id/request',
-      template: getTemplate('requestSubmit')
+    this.route('requestSubmit', {
+      path: '/talent/:serviceId/:practiceId/request',
+      waitOn: function() {
+        return [Meteor.subscribe('services', this.params.serviceId), Meteor.subscribe('practices', this.params.practiceId)]
+      },
+      data: function() { 
+        return { service: Services.findOne({_id: this.params.serviceId}), practice: Practices.findOne({_id: this.params.practiceId})}
+      }
     });
   });
 });

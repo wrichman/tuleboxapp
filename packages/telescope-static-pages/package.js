@@ -18,10 +18,12 @@ Package.onUse(function (api) {
 
   api.addFiles([
     'lib/client/templates/splash_page.html',
-    'lib/client/templates/talent_page.html',
+    'lib/client/templates/services_list.html',
+    'lib/client/templates/services_list.js',
+    'lib/client/templates/practices_list.html',
+    'lib/client/templates/practices_list.js',
     'lib/client/templates/talent_link.html',
     'lib/client/templates/resources_link.html',
-    'lib/client/templates/department_page.html',
     'lib/client/templates/request_submit.html',
     'lib/client/templates/request_submit.js',
     'lib/client/css/bootstrap.css',
@@ -39,14 +41,13 @@ Package.onUse(function (api) {
     'lib/client/templates/flat-kit.js',
     'lib/client/talent.js',
     'lib/collections/requests.js',
-    'lib/server/publications.js',
-    'lib/server/requests.js'
+    'lib/collections/services.js',
+    'lib/collections/practices.js'
   ], ['client']);
 
   api.addFiles([
-    'lib/collections/requests.js',
     'lib/server/publications.js',
-    'lib/server/requests.js'
+    'lib/server/fixtures.js'
   ], ['server']);
 
 });

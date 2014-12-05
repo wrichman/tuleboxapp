@@ -1,0 +1,1 @@
+Practices = new Meteor.Collection('practices');

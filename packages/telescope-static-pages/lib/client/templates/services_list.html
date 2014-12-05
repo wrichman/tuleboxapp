@@ -1,0 +1,36 @@
+<template name="servicesList">
+
+  <section class="projects-4" style="padding-top: 10px">
+    <div class="container" style="width:100%">
+        <div class="projects row" style="margin-top:20px">
+            {{#each services}}
+                {{> service}}
+            {{/each}}
+        </div>
+    </div>
+  </section>
+</template>
+
+<template name="service">
+    <div class="project-wrapper col-sm-3">
+        <div class="project">
+            <div class="photo-wrapper {{color}} btn-embossed">
+                <a href="{{pathFor 'practicesList'}}" class="overlay behind">
+                    <span>
+                        Incorporation Docs<br>
+                        Employment Agreement<br>
+                        Partnership Agreement
+                    </span>
+                </a>
+                <a href="{{pathFor 'practicesList'}}" class="overlay showing">
+                    <span>
+                        {{name}}
+                    </span>
+                </a>
+            </div>
+            <div class="info">
+                
+            </div>
+        </div>
+    </div>
+</template>
