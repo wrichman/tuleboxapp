@@ -3,6 +3,8 @@ Template.requestSubmit.events({
     e.preventDefault();
 
     var request = {
+      service: $('span#service').html(),
+      practice: $('span#practice').html(),
       name: $(e.target).find('[name=name]').val(),
       phone: $(e.target).find('[name=phone]').val(),
       email: $(e.target).find('[name=email]').val(),
@@ -11,7 +13,7 @@ Template.requestSubmit.events({
     
     request._id = Requests.insert(request);
     var subject = "Welcome to Telescope, " + request.name;
-    Meteor.call('buildAndSendEmail', request.email, subject, 'emailNewRequest', request)
+    Meteor.call('buildAndSendEmail', 'williamrichman@gmail.com', subject, 'emailNewRequest', request)
     Router.go('talent', request);
   }
 });
