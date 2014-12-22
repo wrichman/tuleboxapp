@@ -9,6 +9,13 @@
   <a href="{{postLink}}" target="_blank">{{title}}</a>
 </span>
 
+{{#if body}}
+  <div class="post-body-excerpt">
+    {{{htmlBody}}}
+    <a href="{{postPageLink}}" class="comment-link" target="_blank">Read more</a>
+  </div>
+{{/if}}
+
 <div class="post-meta">
   {{#if domain}}
     <a class="post-domain" href="">{{domain}}</a>
@@ -19,14 +26,6 @@
   |
   <a href="{{postPageLink}}" class="comment-link" target="_blank">{{comments}} Comments</a>
 </div>
-
-
-{{#if body}}
-  <div class="post-body-excerpt">
-    {{{htmlBody}}}
-    <a href="{{postPageLink}}" class="comment-link" target="_blank">Read more</a>
-  </div>
-{{/if}}
 
 
 <br>
