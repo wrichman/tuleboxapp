@@ -2140,7 +2140,6 @@ section * {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  background: white;
 }
 .header-6-sub .signup-form form .form-control,
 .header-6-sub .signup-form form button {
@@ -2165,6 +2164,7 @@ section * {
 .header-6-sub .signup-form form .form-control:first-child,
 .header-6-sub .signup-form form button:first-child {
   margin: 0;
+  margin-right: 12px;
 }
 .header-6-sub .signup-form form .form-control {
   border-color: #dee1e3;
