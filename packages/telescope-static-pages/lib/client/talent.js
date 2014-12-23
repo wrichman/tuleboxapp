@@ -45,5 +45,5 @@ var departments =[
 ]
 
 
-secondaryNav.push('talentLink');
-primaryNav.push('resourcesLink');
+secondaryNav.unshift('talentLink');
+secondaryNav.unshift('resourcesLink');
